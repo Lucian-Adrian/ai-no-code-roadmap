@@ -21,6 +21,9 @@ Try the live demo: https://Lucian-Adrian.github.io/ai-no-code-roadmap/
 - GitHub actions CI and auto-deployment to GitHub Pages
  - Welcome popup on the homepage that invites new visitors to "Start the Roadmap"
 
+### Popup behavior
+- The popup appears once for new visitors and can be dismissed; it encourages running the roadmap and links to the Roadmap page.
+
 ## Example Workflow Use Case
 - Trigger: Gmail / New Email
 - Check: IF subject contains "Urgent"
