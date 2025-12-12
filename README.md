@@ -51,5 +51,18 @@ If you find this project helpful, please star ⭐ the repository to help others 
 
 Want to help more? Share the demo on Twitter/X or LinkedIn and show a quick GIF of how it works.
 
+## Social preview (OG image)
+For WhatsApp and Telegram previews to show the big headline "DON'T CODE. ARCHITECT.", ensure `public/og-architect.png` is a proper 1200x630 PNG. The repo includes an `og-architect.svg` file (easy to edit), and you can export it to PNG using ImageMagick or a similar tool.
+
+Example ImageMagick command (Linux/macOS/Windows with ImageMagick installed):
+
+```bash
+magick convert public/og-architect.svg -background white -resize 1200x630 public/og-architect.png
+```
+
+If you're using headless Chromium (e.g., puppeteer or Playwright), you can also render the SVG to PNG at 1200x630.
+
+After updating the PNG, push the image to the repo and allow a few minutes for platforms' caches (WhatsApp/Telegram/Twitter) to refresh. You may need to use their link debugger or re-share the link for a fresh preview.
+
 ## License
 MIT
