@@ -9,5 +9,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: process.env.NODE_ENV === 'production' ? '/ngo_website/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/ai-no-code-roadmap/' : '/',
 })
