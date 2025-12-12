@@ -14,7 +14,6 @@ Thumbs.db
 *.sublime*
 
 # Node
-package-lock.json
 pnpm-lock.yaml
 yarn.lock
 
@@ -33,7 +32,6 @@ pnpm-debug.log*
 
 # Vite
 dist/
-public/
 
 # Coverage
 coverage/
