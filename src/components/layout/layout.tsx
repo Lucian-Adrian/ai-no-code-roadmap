@@ -6,6 +6,7 @@ interface LayoutProps {
 }
 
 import { StartDialog } from "@/components/start/StartDialog"
+import { TopLeftCTA } from "@/components/notifications/TopLeftCTA"
 export function Layout({ children }: LayoutProps) {
   const location = useLocation()
   const isHome = location.pathname === "/" && (location.hash === "" || location.hash === "#" || location.hash === "#/" )
@@ -14,6 +15,7 @@ export function Layout({ children }: LayoutProps) {
     <div className="min-h-screen bg-background font-sans antialiased">
       <Navbar />
       {isHome && <StartDialog />}
+      <TopLeftCTA />
       <main className="flex-1">
         {children}
       </main>
