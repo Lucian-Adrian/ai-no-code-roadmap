@@ -34,7 +34,7 @@ export function TopLeftCTA() {
           <Link to="/roadmap" onClick={() => dismiss()} className="hidden md:inline-flex items-center gap-2 text-sm font-bold rounded-none border-2 border-black bg-black text-white px-3 py-2 hover:bg-white hover:text-black transition-all cta-pulse">
             Start <ArrowRight className="h-4 w-4" />
           </Link>
-          <div className="hidden md:block">
+          <div>
             <StarButton />
           </div>
           <button aria-label="Dismiss" onClick={dismiss} className="p-2 rounded-none border-2 border-black bg-white text-black hover:bg-black hover:text-white">
