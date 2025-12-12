@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles, Zap, Brain } from "lucide-react"
 import { Link } from "react-router-dom"
 import React from "react"
+import { StarButton } from "@/components/github/StarButton"
 
 export function HomePage() {
   return (
@@ -32,6 +33,10 @@ export function HomePage() {
               READ STRATEGY
             </Button>
           </Link>
+          
+          <div className="hidden md:block">
+            <StarButton />
+          </div>
         </div>
       </div>
 
