@@ -26,7 +26,7 @@ export function TopLeftCTA() {
 
   return (
     <div
-      className={`fixed left-4 top-4 z-50 w-72 max-w-[85vw] rounded-none border-2 border-black bg-white p-3 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform transition-all duration-300 ${visible ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0 pointer-events-none"}`}
+      className={`hidden md:block fixed left-4 top-4 z-50 w-72 max-w-[85vw] rounded-none border-2 border-black bg-white p-3 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform transition-all duration-300 ${visible ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0 pointer-events-none"}`}
       style={{ animation: visible ? "cta-slide-down 450ms cubic-bezier(0.2,0.9,0.2,1)" : undefined }}
     >
       <div className="flex items-start justify-between gap-2">

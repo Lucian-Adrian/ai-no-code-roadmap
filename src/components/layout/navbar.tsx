@@ -55,7 +55,7 @@ export function Navbar() {
           <div className="hidden sm:block">
             <StarButton />
           </div>
-          <button aria-label="Menu" className="md:hidden p-2 rounded-none border-2 border-black bg-white hover:bg-black hover:text-white" onClick={() => setOpen(true)}>
+          <button aria-label="Menu" aria-expanded={open} aria-controls="mobile-menu" className="md:hidden p-2 rounded-none border-2 border-black bg-white hover:bg-black hover:text-white" onClick={() => setOpen(true)}>
             <Menu className="h-4 w-4" />
           </button>
         </div>

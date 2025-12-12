@@ -6,7 +6,7 @@ export function MobileMenu({ open, onClose }: { open: boolean, onClose: () => vo
   if (!open) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex">
+    <div id="mobile-menu" className="fixed inset-0 z-50 flex">
       <div className="absolute inset-0 bg-black/60" onClick={onClose} />
       <div className="relative ml-auto w-[80vw] max-w-xs h-full bg-white border-l-2 border-black p-6 shadow-[8px_0px_0px_0px_rgba(0,0,0,1)]">
         <div className="flex items-center justify-between mb-6">
