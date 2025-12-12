@@ -1,4 +1,5 @@
 import { Navbar } from "./navbar"
+import { useLocation } from "react-router-dom"
 
 interface LayoutProps {
   children: React.ReactNode
@@ -6,10 +7,13 @@ interface LayoutProps {
 
 import { StartDialog } from "@/components/start/StartDialog"
 export function Layout({ children }: LayoutProps) {
+  const location = useLocation()
+  const isHome = location.pathname === "/" && (location.hash === "" || location.hash === "#" || location.hash === "#/" )
+
   return (
     <div className="min-h-screen bg-background font-sans antialiased">
       <Navbar />
-      <StartDialog />
+      {isHome && <StartDialog />}
       <main className="flex-1">
         {children}
       </main>
