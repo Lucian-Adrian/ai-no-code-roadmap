@@ -1,20 +1,26 @@
 import { useEffect, useState } from "react"
+import { useIsDesktop } from "@/lib/useMediaQuery"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Check, X } from "lucide-react"
 import { Link } from "react-router-dom"
 
 export function StartDialog() {
+  const isDesktop = useIsDesktop()
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
     const seen = localStorage.getItem("aa_start_popup_seen")
-    if (!seen) {
+    // Do not show on mobile
+    if (!seen && isDesktop) {
       // show after a small delay so it feels less abrupt
       const t = setTimeout(() => setOpen(true), 700)
       return () => clearTimeout(t)
     }
-  }, [])
+  }, [isDesktop])
+
+  // Do not render modal on mobile
+  if (!isDesktop) return null
 
   const close = () => {
     setOpen(false)

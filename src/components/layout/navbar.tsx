@@ -3,9 +3,13 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Cog } from "lucide-react"
 import { StarButton } from "@/components/github/StarButton"
+import { useState } from "react"
+import { Menu } from "lucide-react"
+import { MobileMenu } from "@/components/layout/MobileMenu"
 
 export function Navbar() {
   const location = useLocation()
+  const [open, setOpen] = useState(false)
   
   const links = [
     { href: "/", label: "Overview" },
@@ -51,8 +55,12 @@ export function Navbar() {
           <div className="hidden sm:block">
             <StarButton />
           </div>
+          <button aria-label="Menu" className="md:hidden p-2 rounded-none border-2 border-black bg-white hover:bg-black hover:text-white" onClick={() => setOpen(true)}>
+            <Menu className="h-4 w-4" />
+          </button>
         </div>
       </div>
+      <MobileMenu open={open} onClose={() => setOpen(false)} />
     </header>
   )
 }

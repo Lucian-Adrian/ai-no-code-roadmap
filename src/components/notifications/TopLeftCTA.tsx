@@ -2,17 +2,22 @@ import { useEffect, useState } from "react"
 import { X, ArrowRight } from "lucide-react"
 import { Link } from "react-router-dom"
 import { StarButton } from "@/components/github/StarButton"
+import { useIsDesktop } from "@/lib/useMediaQuery"
 
 export function TopLeftCTA() {
   const [visible, setVisible] = useState(false)
+  const isDesktop = useIsDesktop()
 
   useEffect(() => {
+    // Only show on desktop to avoid mobile popups
     const dismissed = localStorage.getItem("aa_top_left_cta_dismissed")
-    if (!dismissed) {
+    if (!dismissed && isDesktop) {
       const t = setTimeout(() => setVisible(true), 800)
       return () => clearTimeout(t)
     }
-  }, [])
+  }, [isDesktop])
+
+  if (!isDesktop) return null
 
   const dismiss = () => {
     setVisible(false)
