@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Cog } from "lucide-react"
+import { StarButton } from "@/components/github/StarButton"
 
 export function Navbar() {
   const location = useLocation()
@@ -46,6 +47,10 @@ export function Navbar() {
               Start Learning
             </Button>
           </Link>
+          
+          <div className="hidden sm:block">
+            <StarButton />
+          </div>
         </div>
       </div>
     </header>
