@@ -20,6 +20,7 @@ Try the live demo: https://Lucian-Adrian.github.io/ai-no-code-roadmap/
 - Minimalist UI focused on clarity and speed
 - GitHub actions CI and auto-deployment to GitHub Pages
  - Welcome popup on the homepage that invites new visitors to "Start the Roadmap"
+ - Persistent top-left CTA to quickly jump to the roadmap (dismissible)
 
 ### Popup behavior
 - The popup appears once for new visitors and can be dismissed; it encourages running the roadmap and links to the Roadmap page.
