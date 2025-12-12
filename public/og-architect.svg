@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <g fill="#000" font-family="Inter, Arial, sans-serif">
+    <text x="80" y="200" font-size="110" font-weight="900">DON'T CODE.</text>
+    <text x="80" y="360" font-size="110" font-weight="900">ARCHITECT.</text>
+    <text x="80" y="520" font-size="34" font-weight="500">The Automation Architect — AI No-Code Roadmap</text>
+  </g>
+</svg>
