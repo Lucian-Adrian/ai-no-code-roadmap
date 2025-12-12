@@ -8,6 +8,8 @@ A compact, brutalist UI learning roadmap to teach n8n and visual automation. Lea
 ## Live Demo
 Visit the demo at: https://Lucian-Adrian.github.io/ai-no-code-roadmap/
 
+![Demo Screenshot](/ai-no-code-roadmap/og.svg)
+
 ## Features
 - Brutalist, high-contrast UI designed for clarity and legibility
 - Scaffolded learning roadmap for n8n and automation primitives
