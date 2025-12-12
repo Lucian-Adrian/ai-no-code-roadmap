@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import { Star, Github } from "lucide-react"
+import { useEffect, useState } from "react"
+import { Github } from "lucide-react"
 
 export function StarButton({ owner = "Lucian-Adrian", repo = "ai-no-code-roadmap" }: { owner?: string, repo?: string }) {
   const [stars, setStars] = useState<number | null>(null)
