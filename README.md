@@ -42,10 +42,7 @@ npm run dev
 ```
 
 ## How to contribute
-- Open an issue or a PR — your help is welcome.
-- Use labels `good first issue` and `help wanted` to indicate tasks suitable for first-time contributors.
-- Add tests and small improvements incrementally.
-
+ - Mobile improvements: Mobile menu redesigned to improve touch targets and added a mobile-only drawer. Update: 2025-12-12.
 ## How to star & support
 If you find this project helpful, please star ⭐ the repository to help others discover it.
 
