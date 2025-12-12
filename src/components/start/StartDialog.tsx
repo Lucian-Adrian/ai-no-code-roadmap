@@ -5,6 +5,10 @@ import { Button } from "@/components/ui/button"
 import { Check, X } from "lucide-react"
 import { Link } from "react-router-dom"
 
+/**
+ * StartDialog shows the onboarding modal for first-time visitors.
+ * We only render this on desktop so mobile users don't get obstructed.
+ */
 export function StartDialog() {
   const isDesktop = useIsDesktop()
   const [open, setOpen] = useState(false)
