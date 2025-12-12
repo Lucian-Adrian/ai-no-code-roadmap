@@ -64,5 +64,15 @@ If you're using headless Chromium (e.g., puppeteer or Playwright), you can also 
 
 After updating the PNG, push the image to the repo and allow a few minutes for platforms' caches (WhatsApp/Telegram/Twitter) to refresh. You may need to use their link debugger or re-share the link for a fresh preview.
 
+TIP: You can auto-export the SVG to PNG locally using our helper script:
+
+```pwsh
+npm ci
+npm run export-og
+npm run build
+```
+
+`export-og` uses `sharp` to create a 1200x630 PNG (`public/og-architect.png`) from the editable SVG (`public/og-architect.svg`). Source images are version-controlled.
+
 ## License
 MIT
