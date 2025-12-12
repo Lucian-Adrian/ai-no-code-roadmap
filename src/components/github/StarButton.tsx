@@ -38,6 +38,7 @@ export function StarButton({ owner = "Lucian-Adrian", repo = "ai-no-code-roadmap
   return (
     <button
       aria-label={`Star ${owner}/${repo} on GitHub`}
+      title={`Star ${owner}/${repo} on GitHub`}
       onClick={openRepo}
       className="inline-flex items-center gap-2 px-3 py-2 rounded-none font-bold border-2 border-black bg-black text-white hover:bg-white hover:text-black transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none"
     >
