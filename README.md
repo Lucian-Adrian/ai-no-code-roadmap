@@ -1,46 +1,50 @@
 # Automation Architect — AI No-Code Roadmap
 
-A compact, brutalist UI learning roadmap to teach n8n and visual automation. Learn how to design automations, build an AI agent, and ship automation projects without code.
+[![GitHub stars](https://img.shields.io/github/stars/Lucian-Adrian/ai-no-code-roadmap?style=social)](https://github.com/Lucian-Adrian/ai-no-code-roadmap/stargazers) [![Demo](https://img.shields.io/badge/demo-github%20pages-black?style=flat-square)](https://Lucian-Adrian.github.io/ai-no-code-roadmap/)
 
-[![GitHub stars](https://img.shields.io/github/stars/Lucian-Adrian/ai-no-code-roadmap?style=social)](https://github.com/Lucian-Adrian/ai-no-code-roadmap/stargazers)
-[![Demo](https://img.shields.io/badge/demo-github%20pages-black?style=flat-square)](https://Lucian-Adrian.github.io/ai-no-code-roadmap/)
+A compact, brutalist UI learning roadmap to teach n8n and visual automation. Learn how to design automations, build an AI agent, and ship automation projects without writing production code.
 
 ## Live Demo
-Visit the demo at: https://Lucian-Adrian.github.io/ai-no-code-roadmap/
+Try the live demo: https://Lucian-Adrian.github.io/ai-no-code-roadmap/
 
-![Demo Screenshot](/ai-no-code-roadmap/og.svg)
+## Project Details
+- Audience: Non-technical learners and champions who want to use visual automation to speed up workflows.
+- Purpose: Teach architecture and automation (not general-purpose coding). Encourage building real projects using n8n.
+- Design: Swiss/Brutalist — high contrast, no-radius components, clear call-to-action.
+- Tech: React + Vite + Tailwind + Radix UI (shadcn), deployed to GitHub Pages.
+- Pages: Home, Roadmap (scaffolded modules), Strategy, Resources.
 
 ## Features
-- Brutalist, high-contrast UI designed for clarity and legibility
-- Scaffolded learning roadmap for n8n and automation primitives
-- Active Recall checkpoints to unlock advanced modules
-- Example "AI Agent" project: connect Gmail -> n8n -> OpenAI -> Airtable
+- Step-by-step curriculum with locked Active Recall checkpoints
+- Example-based learning and project scaffolding (final project: AI Agent)
+- Minimalist UI focused on clarity and speed
+- GitHub actions CI and auto-deployment to GitHub Pages
 
-## Example Workflow Use Case (Summary)
+## Example Workflow Use Case
 - Trigger: Gmail / New Email
-- Check: IF email subject contains "Urgent"
-- Action: Use OpenAI to draft a reply
-- Save: Airtable record with subject, summary, and draft reply
+- Check: IF subject contains "Urgent"
+- Action: Use OpenAI to craft a reply
+- Save: Airtable record with metadata, summary and the draft reply
 
-For a detailed walkthrough, see `examples/first-n8n-workflow.md`.
+More details in `examples/first-n8n-workflow.md`.
 
-## How to run locally
-1. Clone the repository
-2. Install dependencies
+## Development (Optional)
+If you're a contributor and want to run the project locally for development, run:
 
 ```pwsh
 npm ci
 npm run dev
 ```
 
+## How to contribute
+- Open an issue or a PR — your help is welcome.
+- Use labels `good first issue` and `help wanted` to indicate tasks suitable for first-time contributors.
+- Add tests and small improvements incrementally.
+
 ## How to star & support
-If you find this project helpful, please star ⭐ the repository! It helps other people discover the work and contributes to the community.
+If you find this project helpful, please star ⭐ the repository to help others discover it.
 
-[Star this repo on GitHub](https://github.com/Lucian-Adrian/ai-no-code-roadmap)
-
-## Contributing
-- Issues and pull requests welcome. Please follow the code of conduct and add a helpful issue or PR description.
-- Label issues as `good first issue` to help newcomers.
+Want to help more? Share the demo on Twitter/X or LinkedIn and show a quick GIF of how it works.
 
 ## License
 MIT
