@@ -19,6 +19,7 @@ Try the live demo: https://Lucian-Adrian.github.io/ai-no-code-roadmap/
 - Example-based learning and project scaffolding (final project: AI Agent)
 - Minimalist UI focused on clarity and speed
 - GitHub actions CI and auto-deployment to GitHub Pages
+ - Welcome popup on the homepage that invites new visitors to "Start the Roadmap"
 
 ## Example Workflow Use Case
 - Trigger: Gmail / New Email
