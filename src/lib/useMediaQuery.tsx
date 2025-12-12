@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react"
 
+/**
+ * useMediaQuery - a small hook to track CSS media queries in React.
+ * Useful for conditionally rendering UI only on certain breakpoints (e.g. desktop).
+ *
+ * Example: const isDesktop = useMediaQuery('(min-width: 768px)')
+ */
 export function useMediaQuery(query: string) {
   const [matches, setMatches] = useState<boolean>(() => {
     if (typeof window === "undefined") return false
@@ -19,6 +25,6 @@ export function useMediaQuery(query: string) {
 }
 
 export function useIsDesktop() {
-  // Tailwind md breakpoint ~768px
+  // Tailwind `md` corresponds to 768px by default. Use this as our desktop cutoff.
   return useMediaQuery("(min-width: 768px)")
 }
