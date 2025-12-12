@@ -17,6 +17,9 @@ export function TopLeftCTA() {
     }
   }, [isDesktop])
 
+  // Announce only when visible to assistive tech
+  const ariaHidden = !visible
+
   if (!isDesktop) return null
 
   const dismiss = () => {
