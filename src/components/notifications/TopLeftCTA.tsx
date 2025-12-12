@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { X, ArrowRight } from "lucide-react"
 import { Link } from "react-router-dom"
+import { StarButton } from "@/components/github/StarButton"
 
 export function TopLeftCTA() {
   const [visible, setVisible] = useState(false)
@@ -26,13 +27,16 @@ export function TopLeftCTA() {
       <div className="flex items-start justify-between gap-2">
         <div>
           <div className="text-xs font-mono uppercase text-gray-500">New</div>
-          <div className="text-sm md:text-base font-black tracking-tight text-black">Start the Roadmap</div>
-          <div className="text-xs text-black/70 mt-1">Build an AI Agent fast — start with the Email Automation project.</div>
+          <div className="text-sm md:text-base font-black tracking-tight text-black">DON'T CODE. ARCHITECT.</div>
+          <div className="text-xs text-black/70 mt-1">If you'd like more of this — star the project on GitHub and help us build more roadmap content.</div>
         </div>
-        <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2">
           <Link to="/roadmap" onClick={() => dismiss()} className="hidden md:inline-flex items-center gap-2 text-sm font-bold rounded-none border-2 border-black bg-black text-white px-3 py-2 hover:bg-white hover:text-black transition-all cta-pulse">
             Start <ArrowRight className="h-4 w-4" />
           </Link>
+          <div className="hidden md:block">
+            <StarButton />
+          </div>
           <button aria-label="Dismiss" onClick={dismiss} className="p-2 rounded-none border-2 border-black bg-white text-black hover:bg-black hover:text-white">
             <X className="h-4 w-4" />
           </button>
