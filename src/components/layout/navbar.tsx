@@ -45,14 +45,14 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4">
           <Link to="/roadmap">
             <Button variant="default" size="sm" className="hidden sm:flex rounded-none border-2 border-black bg-black text-white hover:bg-white hover:text-black transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
               Start Learning
             </Button>
           </Link>
           
-          <div className="hidden sm:block">
+          <div className="hidden sm:block" title="Open the project on GitHub">
             <StarButton />
           </div>
           <button aria-label="Menu" aria-expanded={open} aria-controls="mobile-menu" className="md:hidden p-2 rounded-none border-2 border-black bg-white hover:bg-black hover:text-white" onClick={() => setOpen(true)}>
